@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Go2Kitchen — Ghar jaisa swaad, Gym jaisa nutrition</title>
+  
+  <!-- Preload critical resources -->
+  <link rel="preconnect" href="https://i.ibb.co">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://connect.facebook.net">
+  
+  <!-- Critical CSS - Inlined and optimized -->
+  <style>
+    body{box-sizing:border-box}
+    :root{--gold1:#D4AF37;--gold2:#F5C542;--bg:#0C0C0C;--maxwidth:1100px}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,sans-serif;background:var(--bg);color:#fff;-webkit-font-smoothing:antialiased}
+    
+    /* Optimized Hero - Reduced animations */
+    .hero{position:relative;height:100%;min-height:640px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#1a1a1a 0%,#2d2d2d 50%,#1a1a1a 100%)}
+    .content{position:relative;max-width:var(--maxwidth);width:92%;text-align:center;margin:0 auto}
+    .logo-wrap{display:inline-block;margin-bottom:8px}
+    .logo{height:200px;width:auto;display:block;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))}
+    
+    /* Simplified buttons - Reduced effects */
+    .cta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+    .btn{display:inline-flex;align-items:center;gap:12px;padding:16px 28px;border-radius:50px;font-weight:800;text-decoration:none;border:none;font-size:16px;transition:transform .15s ease;box-shadow:0 4px 16px rgba(0,0,0,0.2)}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:#FF6600;color:#fff}
+    .btn-outline{background:#E23744;color:#fff}
+    .btn-whatsapp{background:#25D366;color:#fff}
+    
+    /* Streamlined USP tiles */
+    .hero-usp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:35px auto;max-width:650px}
+    .hero-usp-tile{background:rgba(255,255,255,0.1);border:1px solid rgba(212,175,55,0.4);border-radius:16px;padding:20px 12px;text-align:center;transition:transform .15s ease}
+    .hero-usp-tile:hover{transform:translateY(-2px)}
+    .hero-usp-icon{font-size:28px;margin-bottom:10px;display:block}
+    .hero-usp-tile span{font-size:13px;font-weight:700;color:#fff;line-height:1.3}
+    
+    /* Optimized trust badges */
+    .trust-badges{display:flex;justify-content:center;gap:20px;margin:25px 0;flex-wrap:wrap}
+    .trust-badge{display:flex;align-items:center;gap:8px;background:rgba(0,255,0,0.08);border:1px solid rgba(0,255,0,0.3);padding:8px 14px;border-radius:20px;font-size:12px;font-weight:600;color:#fff}
+    .trust-icon{font-size:14px}
+    
+    /* Simplified reviews */
+    .reviews-section{max-width:var(--maxwidth);width:92%;margin:40px auto 0;padding:20px 0}
+    .reviews-heading{text-align:center;font-size:18px;font-weight:700;background:linear-gradient(90deg,var(--gold1),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:20px}
+    .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:650px;margin:0 auto}
+    .review-card{background:rgba(255,255,255,0.08);border:1px solid rgba(212,175,55,0.3);border-radius:12px;padding:12px 10px;text-align:center}
+    .review-card .stars{font-size:14px;color:var(--gold1);margin-bottom:6px;display:block}
+    .review-card p{margin:4px 0;font-size:11px;line-height:1.3;color:rgba(255,255,255,0.85);font-weight:600}
+    .reviewer{font-size:9px;color:rgba(255,255,255,0.5);margin-top:6px;display:block}
+    
+    .new-message{margin:20px 0;text-align:center}
+    .new-message p{font-size:16px;font-weight:600;color:rgba(255,255,255,0.9);margin:8px 0;line-height:1.4}
+    .footer{background:#060606;color:rgba(255,255,255,0.7);padding:28px 18px;text-align:center;font-size:13px}
+    
+    /* Mobile optimizations */
+    @media (max-width:900px){
+      .logo{height:160px}
+      .cta-row{gap:8px;margin-top:12px}
+      .btn{padding:10px 14px;font-size:14px}
+      .hero-usp-grid{grid-template-columns:repeat(2,1fr);gap:10px;margin:25px 0}
+      .hero-usp-tile{padding:12px 8px}
+      .hero-usp-icon{font-size:20px;margin-bottom:6px}
+      .hero-usp-tile span{font-size:11px}
+      .trust-badges{gap:10px}
+      .trust-badge{padding:6px 10px;font-size:11px}
+      .reviews-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+      .review-card{padding:8px 6px}
+      .review-card p{font-size:10px}
+      .reviewer{font-size:8px}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero">
+    <div class="content">
+      <!-- Logo with optimized loading -->
+      <div class="logo-wrap">
+        <img class="logo" src="https://i.ibb.co/My58Dksf/go2kitchen-logo-png.png" alt="Go2Kitchen logo" loading="eager" decoding="async">
+      </div>
+
+      <!-- Buttons -->
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://www.swiggy.com/city/mumbai/go2kitchen-2nd-floor-chowpatty-rest939341" target="_blank" rel="noopener">Order on Swiggy</a>
+        <a class="btn btn-outline" href="https://www.zomato.com/mumbai/go2kitchen-charni-road/order" target="_blank" rel="noopener">Order on Zomato</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/918989856565?text=Hi%20Go2Kitchen%2C%20I%20want%20to%20order" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </div>
+
+      <!-- USP Tiles -->
+      <div class="hero-usp-grid">
+        <div class="hero-usp-tile"><div class="hero-usp-icon">😇</div><span>Guilt-Free</span></div>
+        <div class="hero-usp-tile"><div class="hero-usp-icon">🌱</div><span>Eco-Friendly Packaging</span></div>
+        <div class="hero-usp-tile"><div class="hero-usp-icon">💪</div><span>High Protein</span></div>
+        <div class="hero-usp-tile"><div class="hero-usp-icon">🥬</div><span>100% Vegetarian</span></div>
+        <div class="hero-usp-tile"><div class="hero-usp-icon">🔥</div><span>Freshly Prepared</span></div>
+        <div class="hero-usp-tile"><div class="hero-usp-icon">⭐</div><span>Quality & Satisfaction</span></div>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="trust-badges">
+        <div class="trust-badge">
+          <div class="trust-icon">🛡️</div>
+          <span>100% Satisfaction Guarantee</span>
+        </div>
+        <div class="trust-badge">
+          <div class="trust-icon">🔄</div>
+          <span>Free Replacement Policy</span>
+        </div>
+        <div class="trust-badge">
+          <div class="trust-icon">✅</div>
+          <span>Hygiene Certified Kitchen</span>
+        </div>
+      </div>
+
+      <!-- New Message -->
+      <div class="new-message">
+        <p>Please Enjoy Fresh Slow cooked quality food in an Eco-Friendly Non-Plastic Packaging.</p>
+        <p>Looking forward to being your Go2Kitchen</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reviews Section -->
+  <section class="reviews-section">
+    <h2 class="reviews-heading">What Our Customers Say 💬</h2>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Home-cooked taste with gym nutrition!"</p>
+        <span class="reviewer">— Priya S.</span>
+      </div>
+      <div class="review-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Healthy, fresh, and guilt-free!"</p>
+        <span class="reviewer">— Arjun M.</span>
+      </div>
+      <div class="review-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Perfect portions, eco-friendly packaging!"</p>
+        <span class="reviewer">— Neha D.</span>
+      </div>
+      <div class="review-card">
+        <div class="stars">⭐⭐⭐⭐</div>
+        <p>"Quick delivery, super fresh meals!"</p>
+        <span class="reviewer">— Rohan P.</span>
+      </div>
+      <div class="review-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Premium taste, no oil overload!"</p>
+        <span class="reviewer">— Kavita L.</span>
+      </div>
+      <div class="review-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Perfect health and taste balance!"</p>
+        <span class="reviewer">— Ankit R.</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © <span id="year"></span> Go2Kitchen — Guilt-free, premium vegetarian comfort meals • Based in Girgaon, Mumbai
+  </footer>
+
+  <!-- Meta Pixel Code with noscript fallback -->
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2364300473972940&ev=PageView&noscript=1" /></noscript>
+
+  <!-- Optimized Scripts - Deferred for faster loading -->
+  <script>
+    // Essential functionality first
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Load analytics after page is ready
+    window.addEventListener('load', function() {
+      // Google Analytics - Deferred
+      const gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-7Z9M5GRYB';
+      document.head.appendChild(gaScript);
+      
+      gaScript.onload = function() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-7Z9M5GRYB', {'send_page_view': true});
+      };
+      
+      // Meta Pixel - Deferred with correct ID
+      !function(f,b,e,v,n,t,s){
+        if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];
+        t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)
+      }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '2364300473972940');
+      fbq('track', 'PageView');
+      
+      // Track button clicks for better conversion data
+      document.querySelectorAll('.btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const platform = this.textContent.includes('Swiggy') ? 'Swiggy' : 
+                          this.textContent.includes('Zomato') ? 'Zomato' : 'WhatsApp';
+          fbq('track', 'Lead', {content_name: platform + ' Order Button'});
+        });
+      });
+    });
+  </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99522831b092ff68',t:'MTc2MTU2NzcyNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
