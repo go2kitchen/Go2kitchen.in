@@ -9,14 +9,14 @@
   <meta name="author" content="Go2Kitchen">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="googlebot" content="index, follow">
-  <link rel="canonical" href="https://go2kitchen.com"><!-- Open Graph / Facebook -->
+  <link rel="canonical" href="https://go2kitchen.in"><!-- Open Graph / Facebook -->
   <meta property="og:type" content="restaurant">
   <meta property="og:title" content="Go2Kitchen Mumbai | Premium High Protein Vegetarian Meals">
   <meta property="og:description" content="Order premium high-protein vegetarian comfort meals in Mumbai. Freshly prepared, guilt-free food in eco-friendly packaging.">
-  <meta property="og:image" content="https://go2kitchen.com/assets/go2kitchen-social-share.jpg">
+  <meta property="og:image" content="https://go2kitchen.in/assets/go2kitchen-social-share.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:url" content="https://go2kitchen.com">
+  <meta property="og:url" content="https://go2kitchen.in">
   <meta property="og:site_name" content="Go2Kitchen">
   <meta property="og:locale" content="en_IN">
   <meta property="restaurant:contact_info:street_address" content="2nd Floor, Chowpatty, Girgaon">
@@ -27,7 +27,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Go2Kitchen Mumbai | Premium High Protein Vegetarian Meals">
   <meta name="twitter:description" content="Order premium high-protein vegetarian comfort meals in Mumbai. Freshly prepared, guilt-free food in eco-friendly packaging.">
-  <meta name="twitter:image" content="https://go2kitchen.com/assets/go2kitchen-social-share.jpg">
+  <meta name="twitter:image" content="https://go2kitchen.in/assets/go2kitchen-social-share.jpg">
   <meta name="twitter:site" content="@Go2Kitchen"><!-- Local Business Schema -->
   <script type="application/ld+json">
     {
@@ -35,9 +35,9 @@
       "@type": "Restaurant",
       "name": "Go2Kitchen",
       "description": "Premium high-protein vegetarian comfort meals with eco-friendly packaging in Mumbai",
-      "url": "https://go2kitchen.com",
-      "logo": "https://go2kitchen.com/assets/go2kitchen-logo-white.png",
-      "image": "https://go2kitchen.com/assets/optimized-hero.webp",
+      "url": "https://go2kitchen.in",
+      "logo": "https://go2kitchen.in/assets/go2kitchen-logo-white.png",
+      "image": "https://go2kitchen.in/assets/optimized-hero.webp",
       "email": "admin@go2kitchen.in",
       "address": {
         "@type": "PostalAddress",
@@ -55,13 +55,13 @@
       "openingHours": "Mo-Su 11:00-23:00",
       "priceRange": "₹₹",
       "servesCuisine": ["Vegetarian", "Indian", "Healthy"],
-      "menu": "https://go2kitchen.com/menu",
+      "menu": "https://go2kitchen.in/menu",
       "acceptsReservations": false,
       "hasDeliveryService": true,
       "deliveryService": {
         "@type": "DeliveryService",
         "name": "Go2Kitchen Delivery",
-        "url": "https://go2kitchen.com"
+        "url": "https://go2kitchen.in"
       },
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -111,19 +111,19 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://go2kitchen.com"
+          "item": "https://go2kitchen.in"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Mumbai Restaurants",
-          "item": "https://go2kitchen.com/mumbai"
+          "item": "https://go2kitchen.in/mumbai"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Vegetarian Food",
-          "item": "https://go2kitchen.com/vegetarian"
+          "item": "https://go2kitchen.in/vegetarian"
         }
       ]
     }
@@ -291,6 +291,8 @@
             transform: scale(1.05);
         }
 
+
+
         .main-heading {
             margin-bottom: 2rem;
             line-height: 1.1;
@@ -357,8 +359,8 @@
         .cta-buttons {
             display: flex;
             flex-direction: row;
-            gap: 1rem;
-            margin-bottom: 2.5rem;
+            gap: 2rem;
+            margin-bottom: 3rem;
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
@@ -368,16 +370,16 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
-            padding: 1rem 1.5rem;
-            border-radius: 12px;
+            gap: 0.75rem;
+            padding: 1.5rem 2.5rem;
+            border-radius: 16px;
             text-decoration: none;
             color: var(--color-white);
             font-weight: 700;
-            font-size: 0.9rem;
-            min-width: 140px;
+            font-size: 1.1rem;
+            min-width: 180px;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
             text-transform: uppercase;
             letter-spacing: 0.5px;
             position: relative;
@@ -442,30 +444,31 @@
 
         /* Eye-Catching USP Tiles */
         .usp-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1.25rem;
-            max-width: 1000px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            max-width: 700px;
             margin: 0 auto;
+            padding: 0 1rem;
         }
 
         .usp-tile {
             background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(255, 255, 255, 0.08) 100%);
             backdrop-filter: blur(12px);
             border: 2px solid rgba(212, 175, 55, 0.3);
-            border-radius: 20px;
-            padding: 1.5rem 2rem;
+            border-radius: 16px;
+            padding: 1.25rem;
             text-align: center;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             position: relative;
             overflow: hidden;
             display: flex;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             gap: 0.75rem;
-            white-space: nowrap;
-            min-width: 200px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            min-height: 110px;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
         }
 
         .usp-tile::before {
@@ -491,17 +494,20 @@
         }
 
         .usp-icon {
-            font-size: 2rem;
+            font-size: 2.5rem;
             display: block;
-            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+            filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4));
+            line-height: 1;
         }
 
         .usp-title {
-            font-size: 1rem;
+            font-size: 0.95rem;
             font-weight: 700;
             color: var(--color-white);
             letter-spacing: 0.02em;
-            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+            line-height: 1.2;
+            text-align: center;
         }
 
         /* Reviews Section */
@@ -577,6 +583,27 @@
         }
 
         /* Responsive Design */
+        @media (max-width: 639px) {
+            .usp-grid {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 400px;
+                gap: 0.75rem;
+            }
+            
+            .usp-tile {
+                padding: 1rem;
+                min-height: 90px;
+            }
+            
+            .usp-icon {
+                font-size: 2rem;
+            }
+            
+            .usp-title {
+                font-size: 0.85rem;
+            }
+        }
+
         @media (min-width: 640px) {
             .hero-content {
                 padding: 3rem 2rem;
@@ -628,11 +655,6 @@
             scroll-behavior: smooth;
         }
 
-        /* Loading animation for images */
-        .logo {
-            animation: fadeInUp 0.8s ease-out;
-        }
-
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -654,7 +676,7 @@
    <div class="hero-background" role="img" aria-label="Delicious Indian comfort food in premium presentation"></div>
    <div class="hero-overlay"></div>
    <div class="hero-content">
-    <div class="logo-container"><img class="logo" src="assets/go2kitchen-logo-white.png" alt="Go2Kitchen Premium Vegetarian Restaurant Mumbai - High Protein Eco-Friendly Meals" loading="eager" decoding="async" width="180" height="180">
+    <div class="logo-container"><img class="logo" src="assets/go2kitchen-logo-white.png" alt="Go2Kitchen Premium Vegetarian Restaurant Mumbai - High Protein Eco-Friendly Meals" loading="eager" decoding="async" width="120" height="120">
     </div>
     <nav class="cta-buttons" aria-label="Order food online"><a href="https://www.swiggy.com/city/mumbai/go2kitchen-2nd-floor-chowpatty-rest939341" class="cta-button swiggy" target="_blank" rel="noopener noreferrer">
       <svg width="20" height="20" viewbox="0 0 1024 1024" fill="currentColor"><path d="M645 822q-1 0-11-1t-30-5-46-12-56-22-65-35q-29-19-56-44t-48-52-41-58-35-62-30-64-26-64-23-62-22-58q-11-28-17-57t-7-58q-1-15 0-29t4-28 7-26 9-24q12-31 32-57t46-47 57-35 65-21q17-4 35-4t35 4q47 8 65 21t57 35 46 47 32 57q5 12 9 24t7 26 4 28 0 29q-1 29-7 58t-17 57q-10 26-22 58t-23 62-26 64-30 64-35 62-41 58-48 52-56 44q-30 20-65 35t-56 22-46 12-30 5-11 1z" />
@@ -723,5 +745,5 @@
     Keywords: Vegetarian food Mumbai, High protein meals, Eco-friendly packaging, Healthy food delivery, Girgaon restaurants, Premium vegetarian cuisine
    </div>
   </footer>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'995d9735f0613b45',t:'MTc2MTY4NzYxNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'995db4fda0758a02',t:'MTc2MTY4ODgzNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
