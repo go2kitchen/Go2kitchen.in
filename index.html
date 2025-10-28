@@ -233,16 +233,27 @@
         /* Mobile-specific hero optimizations */
         @media (max-width: 768px) {
             .hero-background {
-                background-position: center 30%;
-                background-size: cover;
+                background-position: center center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-color: var(--color-primary);
                 min-height: 100vh;
+            }
+        }
+
+        /* Small mobile devices */
+        @media (max-width: 480px) {
+            .hero-background {
+                background-size: cover;
+                background-position: center 20%;
             }
         }
 
         /* Tablet optimizations */
         @media (min-width: 769px) and (max-width: 1024px) {
             .hero-background {
-                background-position: center 40%;
+                background-position: center center;
+                background-size: cover;
             }
         }
 
@@ -251,6 +262,7 @@
             .hero-background {
                 background-position: center center;
                 background-attachment: fixed;
+                background-size: cover;
             }
         }
 
@@ -745,5 +757,5 @@
     Keywords: Vegetarian food Mumbai, High protein meals, Eco-friendly packaging, Healthy food delivery, Girgaon restaurants, Premium vegetarian cuisine
    </div>
   </footer>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'995e160f720e8b09',t:'MTc2MTY5MjgxMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'995e1c1017cc8b09',t:'MTc2MTY5MzA1OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
