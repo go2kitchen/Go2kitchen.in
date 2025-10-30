@@ -693,22 +693,34 @@
             document.addEventListener('DOMContentLoaded', function(){
                 var ctas = document.querySelectorAll('.cta-buttons a[data-event]');
                 ctas.forEach(function(a){
-                    a.addEventListener('click', function(e){
-                        var ev = a.getAttribute('data-event');
-                        var friendlyName = a.getAttribute('data-name') || ev;
-                        var href = a.href;
+        a.addEventListener('click', function(e){
+            var ev = a.getAttribute('data-event');
+            var friendlyName = a.getAttribute('data-name') || ev;
+            var href = a.href;
 
-                        // Fire FB pixel custom event
-                        fireFB(ev, { name: friendlyName, href: href });
+            // UNIFIED CONVERSION EVENT - This is what you'll optimize your ads for
+            fireFB('order_initiated', { 
+                name: 'Order Button Clicked', 
+                href: href,
+                extra: { 
+                    platform: ev.replace('_click', '').replace('_order', ''),
+                    button_text: friendlyName 
+                }
+            });
 
-                        // Fire GA4 if present
-                        fireGTAG(ev, { name: friendlyName, href: href });
+            // Individual tracking for internal analytics (optional)
+            fireFB(ev, { name: friendlyName, href: href });
+
+            // Fire GA4 if present
+            fireGTAG('order_initiated', { name: 'Order Button Clicked', href: href });
+            fireGTAG(ev, { name: friendlyName, href: href });
 
                         // For debugging in dev, keep a console log
-                        console && console.log('[CTA click] event:', ev, 'href:', href);
-                    });
-                });
-            });
+                        console && console.log('[UNIFIED CONVERSION] order_initiated fired for:', ev, 'href:', href);
+                        console && console.log('[INDIVIDUAL TRACKING] event:', ev, 'href:', href);
+                     });
+                  });
+               });
         })();
     </script>
   <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9962f84032bc6ed1',t:'MTc2MTc0NDAyMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
